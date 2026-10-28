@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #243238;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu {
+    min-height: 70px;
+    padding: 12px 5%;
+    background: #164A5A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: white;
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 28px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#lista-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+#lista-menu a {
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#lista-menu a:hover {
+    color: #7FFFD4;
+}
+
+.menu-mobile {
+    display: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#background {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.35)), url("../images/outra.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.boasvindas {
+    margin-left: 10%;
+    color: white;
+}
+
+.boasvindas h1 {
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 80px;
+    line-height: 1.05;
+}
+
+.boasvindas p {
+    margin-top: 20px;
+    font-family: "Coco Gothic", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.introducao {
+    padding: 80px 8%;
+    text-align: center;
+    background: #f5f7f6;
+}
+
+.conteudo-introducao h2 {
+    color: #164A5A;
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 40px;
+}
+
+.infos {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.texto-infos,
+.imagem-infos {
+    width: 50%;
+}
+
+.infos h3 {
+    color: #164A5A;
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.infos p {
+    margin-top: 25px;
+    font-family: "Coco Gothic", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.infos img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.subtitulo,
+.subtitulo3 h2 {
+    padding: 22px;
+    background: #164A5A;
+    color: white;
+    text-align: center;
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 32px;
+}
+
+.hospedagemhome {
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hospedagemhome div {
+    width: 33.33%;
+}
+
+.hospedagemhome img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hospedagemhome h3,
+.qualidades h3 {
+    margin-top: 15px;
+    color: #164A5A;
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 28px;
+}
+
+.hospedagemhome p,
+.qualidades p {
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.subtitulo3 {
+    margin-top: 30px;
+}
+
+.qualidades {
+    padding: 45px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.qualidades div {
+    width: 33.33%;
+}
+
+.qualidades img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 45px 8%;
+    background: #164A5A;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: "Catchy Mager", Georgia, serif;
+    font-size: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodapelink {
+    margin-top: 25px;
+}
+
+.rodapelink a {
+    display: block;
+    margin: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.rodapelink a:hover {
+    color: #7FFFD4;
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.25);
+}
+
+
+@media  (max-width: 900px) {
+    #menu {
+        padding: 12px 4%;
+    }
+
+    #lista-menu {
+        gap: 18px;
+    }
+
+    #lista-menu a {
+        font-size: 15px;
+    }
+
+    .boasvindas h1 {
+        font-size: 60px;
+    }
+
+    .infos {
+        padding: 70px 6%;
+        gap: 35px;
+    }
+
+    .infos h3 {
+        font-size: 34px;
+    }
+
+    .infos p {
+        font-size: 17px;
+    }
+
+    .hospedagemhome,
+    .qualidades {
+        flex-wrap: wrap;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    #menu {
+        min-height: 65px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    #lista-menu {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        background: #164A5A;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #lista-menu.ativo {
+        display: flex;
+    }
+
+    #lista-menu li {
+        width: 100%;
+        padding: 13px;
+        text-align: center;
+    }
+
+    #lista-menu a {
+        font-size: 17px;
+    }
+
+    #background {
+        min-height: 650px;
+        background-position: center;
+    }
+
+    .boasvindas {
+        margin: 0 25px;
+    }
+
+    .boasvindas h1 {
+        font-size: 45px;
+    }
+
+    .boasvindas p {
+        font-size: 16px;
+    }
+
+    .introducao {
+        padding: 60px 25px;
+    }
+
+    .conteudo-introducao h2 {
+        font-size: 30px;
+    }
+
+    .infos {
+        padding: 60px 25px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .texto-infos,
+    .imagem-infos {
+        width: 100%;
+    }
+
+    .infos h3 {
+        font-size: 31px;
+    }
+
+    .infos p {
+        font-size: 17px;
+    }
+
+    .infos img {
+        height: 280px;
+    }
+
+    .subtitulo,
+    .subtitulo3 h2 {
+        font-size: 26px;
+        padding: 18px 15px;
+    }
+
+    .hospedagemhome,
+    .qualidades {
+        padding: 55px 25px;
+        flex-direction: column;
+    }
+
+    .hospedagemhome div,
+    .qualidades div {
+        width: 100%;
+    }
+
+    .hospedagemhome img,
+    .qualidades img {
+        height: 250px;
+    }
+
+    .hospedagemhome h3,
+    .qualidades h3 {
+        font-size: 27px;
+    }
+
+    .hospedagemhome p,
+    .qualidades p {
+        font-size: 17px;
+    }
+
+    footer {
+        padding: 40px 25px;
+    }
+}
+
+#background2{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.35)), url("../images/acomodacao.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.boasvindas2 {
+    margin-left: 10%;
+    color: white;
+}
+
+.boasvindas2 h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 80px;
+    line-height: 1.05;
+}
+
+.boasvindas2 p {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.introducao2{
+    background-color: white;
+    color:#164A5A;
+}
+
+.introducao2 h2{
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    color: #164A5A;
+}
+
+.quarto1{
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-right: 250px;
+    
+}
+
+.quarto1 img{
+    width: 38%;
+    height: 300px;
+    border-radius: 7%;
+    margin-left: 5px;
+    
+}
+
+.quarto1 h3{
+    font-family: "Montserrat", sans-serif;
+    color: #164A5A;
+    font-size: 50px;
+}
+
+.descricao{
+    margin-bottom: 100px;
+    
+}
+
+.descricao p{
+    margin-left: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px
+}
+
+.acomodacoes{
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.acomodacoes div {
+    width: 33.33%;
+}
+
+.acomodacoes img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.acomodacoes img:hover{
+    transform: scale(1.1);
+}
+
+.acomodacoes p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.introducao3{
+    background-color: #164A5A;
+    color: white;
+}
+
+.introducao3 h2{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
